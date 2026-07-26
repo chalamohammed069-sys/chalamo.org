@@ -61,11 +61,11 @@ BANANA is built upon enterprise-grade **MVVM (Model-View-ViewModel)** and **Clea
 *   **Featured Creators**: Showcase of popular verified developers with distinct glowing borders.
 *   **Grid Recommendations**: 2-column Material 3 cards utilizing abstract, high-contrast gradient overlays, view counters, and play icons.
 
-### 3. Create Video Simulator (`CreateScreen.kt`)
-*   **Interactive Camera Viewfinder**: Simulated camera targeting guide with live radar sweep animations rendered on a custom Compose Canvas.
-*   **Viewfinder Bounds Guides**: Sophisticated vector corner guides for an immersive recording feel.
-*   **Status Indicator**: Dual-state engine flashing `LIVE RECORDING` (Red pulse) or `CAMERA STANDBY` (Neon Green pulse).
-*   **Soundtrack & Metadata Form**: Text entry for rich multi-line captions, tags, and custom music selection.
+### 3. High-Fidelity Camera & Video Capture (`CameraScreen.kt`)
+*   **Real CameraX Viewfinder**: Direct integration with system cameras using a native `PreviewView` bound seamlessly to the Compose AndroidView wrapper.
+*   **Double-Mode Adaptive Engine**: Includes full-fledged physical camera support (with FRONT/BACK flip capability) alongside a gorgeous cyber simulated view-finder fallback for emulator environments.
+*   **Dual-State Status & Loop Preview**: Flashes live recording timers with strict 15-second limits, instantly loading recorded clips into a looped vertical preview overlay.
+*   **Integrated Metadata & Publishing Form**: Direct multi-line description input fields paired with custom soundtrack tags, letting creators post clips straight into the main feed.
 
 ### 4. Interactive Inbox & Chats (`InboxScreen.kt`)
 *   **Tabbed Inbox View**: Seamlessly toggle between **Direct Messages** and **Activity/System Notifications**.

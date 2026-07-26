@@ -190,7 +190,7 @@ fun MainScaffolding(
             when (currentScreen) {
                 "feed" -> FeedScreen(viewModel = viewModel)
                 "discover" -> DiscoverScreen(viewModel = viewModel)
-                "create" -> CreateScreen(viewModel = viewModel)
+                "create" -> CameraScreen(viewModel = viewModel)
                 "inbox" -> InboxScreen(viewModel = viewModel)
                 "chat" -> InboxScreen(viewModel = viewModel) // Chat Room handled inside Inbox screen structure
                 "profile" -> ProfileScreen(viewModel = viewModel)
